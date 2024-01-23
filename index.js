@@ -6,12 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let freelancers = [
         { name: "Alice", occupation: "Writer", startingPrice: 30 },
-        { name: "Bob", occupation: "Teacher", startingPrice: 50 }
+        { name: "Bob", occupation: "Teacher", startingPrice: 50 },
+    
     ];
 
     // Function to render the initial array of freelancers
     function renderFreelancers() {
-        const freelancerList = document.getElementById('freelancer-list');
+        const freelancerList = document.getElementById('freelancer');
         freelancerList.innerHTML = ""; // Clear previous content
 
         freelancers.forEach(freelancer => {
